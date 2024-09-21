@@ -10,7 +10,7 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private url:string = 'http://192.168.1.13:3000';
+  private url:string = 'URL';
 
   getProfile():Observable<RespondeProfile>{
     return this.httpClient.get<RespondeProfile>(`${this.url}/user/profile`)
