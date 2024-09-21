@@ -16,7 +16,7 @@ export class AuthService {
     private router:Router
   ) {}
 
-  private url:string = 'http://192.168.1.13:3000';
+  private url:string = 'URL';
 
   login(creenditals:Login):Observable<RespondeAccess>{
     return this.httpClient.post<RespondeAccess>(`${this.url}/auth/login`,creenditals)
